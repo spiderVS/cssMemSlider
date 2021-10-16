@@ -13,3 +13,35 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper input[name="dot"] {
+  display: none;
+}
+
+.slider {
+  max-width: 70.5rem;
+  padding: 1.5rem;
+  width: 100%;
+  background-color: #2a2d2e;
+}
+
+.slides {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 67.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.slide {
+  max-width: 100%;
+}
