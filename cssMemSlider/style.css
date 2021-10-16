@@ -20,6 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 3rem;
 }
 
 .wrapper input[name="dot"] {
@@ -31,6 +32,9 @@ body {
   padding: 1.5rem;
   width: 100%;
   background-color: #2a2d2e;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 
 .slides {
@@ -42,6 +46,119 @@ body {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+
 .slide {
   max-width: 100%;
+  transition: all 0.5s;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 2rem;
+  padding: 0 1rem;
+}
+
+#slide1:checked ~ .slider .bottom-section .text-box .text-slide {
+  transform: translateX(0);
+  z-index: 1;
+}
+
+#slide2:checked ~ .slider .bottom-section .text-box .text-slide {
+  transform: translateX(-100%);
+  z-index: 2;
+}
+#slide3:checked ~ .slider .bottom-section .text-box .text-slide {
+  transform: translateX(-200%);
+  z-index: 3;
+}
+#slide4:checked ~ .slider .bottom-section .text-box .text-slide {
+  transform: translateX(-300%);
+}
+#slide5:checked ~ .slider .bottom-section .text-box .text-slide {
+  transform: translateX(-400%);
+}
+#slide6:checked ~ .slider .bottom-section .text-box .text-slide {
+  transform: translateX(-500%);
+}
+#slide7:checked ~ .slider .bottom-section .text-box .text-slide {
+  transform: translateX(-600%);
+}
+
+.text-box {
+  font-family: sans-serif;
+  font-size: 1.35rem;
+  color: rgb(243, 234, 234);
+  display: flex;
+  overflow-x: hidden;
+}
+
+.text-box .text-slide {
+  transform: translateX(-100%);
+  flex-basis: 100%;
+  flex-shrink: 0;
+  transition: all 0.6s;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls label {
+  display: block;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.controls label .bullet{
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgb(73, 73, 73);
+  border: 0.2rem solid rgb(21, 158, 204);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.controls label:hover .bullet{
+  background-color: rgb(165, 165, 165);
+}
+
+.controls label:active .bullet{
+  background-color: rgb(88, 88, 88);
+}
+
+#slide1:checked ~ .slider .bottom-section label[for="slide1"] .bullet,
+#slide2:checked ~ .slider .bottom-section label[for="slide2"] .bullet,
+#slide3:checked ~ .slider .bottom-section label[for="slide3"] .bullet,
+#slide4:checked ~ .slider .bottom-section label[for="slide4"] .bullet,
+#slide5:checked ~ .slider .bottom-section label[for="slide5"] .bullet,
+#slide6:checked ~ .slider .bottom-section label[for="slide6"] .bullet,
+#slide7:checked ~ .slider .bottom-section label[for="slide7"] .bullet {
+  background-color: #ffffff;
+}
+
+#slide1:checked ~ .slider .slides .slide {
+  transform: translateX(0);
+}
+#slide2:checked ~ .slider .slides .slide {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .slider .slides .slide {
+  transform: translateX(-200%);
+}
+#slide4:checked ~ .slider .slides .slide {
+  transform: translateX(-300%);
+}
+#slide5:checked ~ .slider .slides .slide {
+  transform: translateX(-400%);
+}
+#slide6:checked ~ .slider .slides .slide {
+  transform: translateX(-500%);
+}
+#slide7:checked ~ .slider .slides .slide {
+  transform: translateX(-600%);
 }
