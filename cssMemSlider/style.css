@@ -144,6 +144,7 @@ body {
 .controls label:active .bullet{
   background-color: #757373 !important;
   border: 0.2rem solid #ffffff;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #slide1:checked ~ .slider .bottom-section label[for="slide1"] .bullet,
