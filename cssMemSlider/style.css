@@ -184,9 +184,14 @@ body {
   transform: translateX(-700%);
 }
 
+/* 375px */
 @media (max-width: 23.4375rem) {
   html {
     font-size: 0.75rem;
+  }
+
+  .wrapper {
+    padding: 0 1rem;
   }
 
   .text-box {
