@@ -153,7 +153,7 @@ body {
 #slide5:checked ~ .slider .bottom-section label[for="slide5"] .bullet,
 #slide6:checked ~ .slider .bottom-section label[for="slide6"] .bullet,
 #slide7:checked ~ .slider .bottom-section label[for="slide7"] .bullet,
-#slide8:checked ~ .slider .bottom-section label[for="slide7"] .bullet {
+#slide8:checked ~ .slider .bottom-section label[for="slide8"] .bullet {
   background-color: #ffffff;
   border: 0.2rem solid #ffffff;
 }
@@ -183,7 +183,7 @@ body {
   transform: translateX(-700%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 23.4375rem) {
   html {
     font-size: 0.75rem;
   }
@@ -193,6 +193,6 @@ body {
   }
 
   .controls label {
-    padding: 0.8rem 0.6rem;
+    padding: 0.8rem 0.57rem;
   }
 }
