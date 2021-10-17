@@ -134,11 +134,11 @@ body {
 }
 
 .controls label:hover .bullet{
-  background-color: rgb(165, 165, 165) !important;
+  background-color: #ffffff !important;
 }
 
 .controls label:active .bullet{
-  background-color: #ffffff !important;
+  background-color: #b1b1b1 !important;
 }
 
 #slide1:checked ~ .slider .bottom-section label[for="slide1"] .bullet,
